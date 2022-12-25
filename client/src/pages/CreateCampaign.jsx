@@ -51,15 +51,15 @@ const CreateCampaign = () => {
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
-            labelName="Your Name *"
-            placeholder="John Doe"
+            labelName="Beneficiary Name *"
+            placeholder="Enter Beneficiary Name eg..John Doe"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
           />
           <FormField 
-            labelName="Campaign Title *"
-            placeholder="Write a title"
+            labelName="Fundraiser Title *"
+            placeholder="Write a Fundraiser title"
             inputType="text"
             value={form.title}
             handleChange={(e) => handleFormFieldChange('title', e)}
@@ -67,8 +67,8 @@ const CreateCampaign = () => {
         </div>
 
         <FormField 
-            labelName="Story *"
-            placeholder="Write your story"
+            labelName="Fundraiser Story *"
+            placeholder="Write your Fundraiser story"
             isTextArea
             value={form.description}
             handleChange={(e) => handleFormFieldChange('description', e)}
@@ -81,8 +81,8 @@ const CreateCampaign = () => {
 
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
-            labelName="Goal *"
-            placeholder="ETH 0.50"
+            labelName="Goal Amount *"
+            placeholder="Enter Goal Amount In ETH 0.50"
             inputType="text"
             value={form.target}
             handleChange={(e) => handleFormFieldChange('target', e)}
@@ -98,7 +98,7 @@ const CreateCampaign = () => {
 
         <FormField 
             labelName="Campaign image *"
-            placeholder="Place image URL of your campaign"
+            placeholder="Place image URL of your campaign banner"
             inputType="url"
             value={form.image}
             handleChange={(e) => handleFormFieldChange('image', e)}
